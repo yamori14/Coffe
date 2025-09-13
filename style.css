@@ -1,0 +1,68 @@
+
+.top-text{
+
+position: absolute;
+width: 74px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 24px;
+
+color: #000000;
+}
+.kavaua{
+
+    /* Welcome to кава UA */
+
+position: absolute;
+width: 452px;
+height: 58px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 100;
+font-size: 48px;
+line-height: 58px;
+/* identical to box height */
+
+color: #000000;
+
+
+}/* coffee 1 */
+.picture{
+    /* !_327 1 */
+
+position: absolute;
+width: 102px;
+height: 58px;
+
+background: url(!_327);
+
+
+}
+.menu{
+    /* чай */
+
+position: absolute;
+width: 56px;
+height: 39px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 32px;
+line-height: 39px;
+/* identical to box height */
+
+color: #000000;
+
+
+}
+
+
+
+
+
