@@ -1,21 +1,23 @@
 
 .top-text{
-
-position: absolute;
-width: 74px;
-height: 24px;
-
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
-line-height: 24px;
 
-color: #be1616;
+color: #000000;
+background-color: #793C75;
+height: 70px;
+align-content: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: #000000;
+    margin-left: 80px;
+   
 }
 .kavaua{
-
-    /* Welcome to кава UA */
 
 position: absolute;
 width: 452px;
@@ -29,24 +31,19 @@ line-height: 58px;
 /* identical to box height */
 
 color: #000000;
-
-
-}/* coffee 1 */
-.picture{
-    /* !_327 1 */
-
-position: absolute;
-width: 102px;
-height: 58px;
-
-background: url(!_327);
-
-
 }
+
+
+
+    
+
+
+/* coffee 1 */
+
 .menu{
     /* чай */
 
-position: absolute;
+
 width: 56px;
 height: 39px;
 
@@ -57,11 +54,83 @@ font-size: 32px;
 line-height: 39px;
 /* identical to box height */
 
-color: #000000;
+color: #7a1a1a;
 
 
 }
+body{
+    background-color: rgb(231, 146, 213);
+}
+.bot-text{
+    /* Наша адреса */
 
+position: absolute;
+width: 132px;
+height: 24px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+
+color: #c4bcbc;
+
+
+}
+.bottom-text{
+    /* Пн-Птн 9:00-19:00 */
+
+position: absolute;
+width: 144px;
+height: 19px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 19px;
+
+color: #8d79ff;
+
+
+
+}
+.figure{
+    /* Rectangle 1 */
+
+position: absolute;
+width: 1000px;
+height: 50px;
+
+background: #793C75;
+transform: matrix(1, 0, 0, -1, 0, 0);
+
+}
+.figure-2{
+    /* Rectangle 2 */
+
+position: bottom;
+position: absolute;
+width: 1110px;
+height: 150px;
+
+background: #793C75;
+
+    /* Rectangle 1 */
+
+
+
+}
+.picture{
+    /* !_327 1 */
+
+width: 02px;
+height: 8px;
+
+
+
+}
 
 
 
