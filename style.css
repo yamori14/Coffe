@@ -9,7 +9,7 @@ color: #000000;
 background-color: #793C75;
 height: 70px;
 align-content: center;
-}
+
 
 nav a{
     text-decoration: none;
@@ -17,20 +17,18 @@ nav a{
     margin-left: 80px;
    
 }
+}
 .kavaua{
 
-position: absolute;
-width: 452px;
-height: 58px;
+font-size: 30px;
+
 
 font-family: 'Inter';
 font-style: italic;
-font-weight: 100;
-font-size: 48px;
-line-height: 58px;
-/* identical to box height */
 
 color: #000000;
+text-align: center;
+margin-top: 40px
 }
 
 
@@ -41,21 +39,25 @@ color: #000000;
 /* coffee 1 */
 
 .menu{
-    /* чай */
+    
 
 
-width: 56px;
-height: 39px;
+
+font-size:60px;
+
 
 font-family: 'Inter';
 font-style: normal;
-font-weight: 300;
-font-size: 32px;
-line-height: 39px;
 /* identical to box height */
 
-color: #7a1a1a;
-
+color: #000000;
+display: inline-block;
+nav a{
+    text-decoration: none;
+    color: #000000;
+    margin-left: 190px;
+   
+}
 
 }
 body{
@@ -63,70 +65,49 @@ body{
 }
 .bot-text{
     /* Наша адреса */
+display: inline-block;
+display:flex;
+gap: 280px;
+font-size: 50px;
 
-position: absolute;
-width: 132px;
-height: 24px;
 
 font-family: 'Inter';
 font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 24px;
 
-color: #c4bcbc;
+
+color: #000000;
 
 
 }
 .bottom-text{
     /* Пн-Птн 9:00-19:00 */
+    font-size: 30px;
 
-position: absolute;
-width: 144px;
-height: 19px;
 
+display: inline-block;
+display:flex;
+gap: 280px;
 font-family: 'Inter';
 font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 19px;
 
-color: #8d79ff;
 
+color: #000000;
+nav a{
+    text-decoration: none;
+    color: #000000;
+    margin-left: 80px;
+   
+}
 
 
 }
-.figure{
-    /* Rectangle 1 */
 
-position: absolute;
-width: 1000px;
-height: 50px;
-
-background: #793C75;
-transform: matrix(1, 0, 0, -1, 0, 0);
-
-}
-.figure-2{
-    /* Rectangle 2 */
-
-position: bottom;
-position: absolute;
-width: 1110px;
-height: 150px;
-
-background: #793C75;
-
-    /* Rectangle 1 */
-
-
-
-}
 .picture{
     /* !_327 1 */
 
-width: 02px;
-height: 8px;
+display: inline-block;
+display:flex;
+gap: 270px;
 
 
 
