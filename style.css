@@ -1,97 +1,100 @@
+.top-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
 
-.top-text{
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-
-color: #000000;
-background-color: #793C75;
-height: 70px;
-align-content: center;
+    color: #000000;
+    background-color: #793C75;
+    height: 70px;
+    align-content: center;
 }
 
-nav a{
+nav a {
     text-decoration: none;
     color: #000000;
     margin-left: 80px;
-   
-}
-.kavaua{
 
-position: absolute;
-width: 452px;
-height: 58px;
-
-font-family: 'Inter';
-font-style: italic;
-font-weight: 100;
-font-size: 48px;
-line-height: 58px;
-/* identical to box height */
-
-color: #000000;
 }
 
+.kavaua {
 
+    text-align: center;
 
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: italic;
+    /* identical to box height */
+
+    color: #000000;
+    padding: 0px;
+}
+
+.kavaua h1 {
+    font-weight: 100;
+    font-size: 60px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.kavaua h2{
+    position: relative;
+    font-weight: 100;
+    font-size: 50px;
+    margin-top: 0px;
+    top: -40px;
     
+
+}
+
+
+
 
 
 /* coffee 1 */
 
-.menu{
+.menu {
     /* чай */
-
-
-width: 56px;
-height: 39px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 32px;
-line-height: 39px;
-/* identical to box height */
-
-color: #7a1a1a;
-
-
+    position: relative;
+    font-size: 32px;
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    margin-top: -120px;
 }
-body{
+
+.menu p{
+    text-align: center;
+    width: 100px;
+}
+
+body {
     background-color: rgb(231, 146, 213);
+    margin: 0px;
+    padding: 0px;
 }
-.bot-text{
+
+.bot-text {
     /* Наша адреса */
 
-position: absolute;
-width: 132px;
-height: 24px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 24px;
+    gap: 220px;
 
-color: #c4bcbc;
+
+    color: #000000;
 
 
 }
-.bottom-text{
+
+.bottom-text {
     
 
-
-width: 144px;
-height: 19px;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 19px;
-
-color: #8d79ff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+   
 
 
 
@@ -99,5 +102,12 @@ color: #8d79ff;
 
 
 
+.picture img {
+    width: 150px;
+    height: 150px;
+}
 
-
+.picture{
+    display: flex;
+    justify-content: space-between;
+}
