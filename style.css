@@ -79,9 +79,9 @@ color: #c4bcbc;
 
 }
 .bottom-text{
-    /* Пн-Птн 9:00-19:00 */
+    
 
-position: absolute;
+
 width: 144px;
 height: 19px;
 
@@ -92,41 +92,6 @@ font-size: 16px;
 line-height: 19px;
 
 color: #8d79ff;
-
-
-
-}
-.figure{
-    /* Rectangle 1 */
-
-position: absolute;
-width: 1000px;
-height: 50px;
-
-background: #793C75;
-transform: matrix(1, 0, 0, -1, 0, 0);
-
-}
-.figure-2{
-    /* Rectangle 2 */
-
-position: bottom;
-position: absolute;
-width: 1110px;
-height: 150px;
-
-background: #793C75;
-
-    /* Rectangle 1 */
-
-
-
-}
-.picture{
-    /* !_327 1 */
-
-width: 02px;
-height: 8px;
 
 
 
