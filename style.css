@@ -80,9 +80,17 @@ color: #000000;
 
 }
 .bottom-text{
+<<<<<<< HEAD
     /* Пн-Птн 9:00-19:00 */
     font-size: 30px;
 
+=======
+    
+
+
+width: 144px;
+height: 19px;
+>>>>>>> 28b81592b94b80ea908f2646dda3a8d6a8213165
 
 display: inline-block;
 display:flex;
@@ -101,6 +109,7 @@ nav a{
 
 
 }
+<<<<<<< HEAD
 
 .picture{
     /* !_327 1 */
@@ -112,6 +121,8 @@ gap: 270px;
 
 
 }
+=======
+>>>>>>> 28b81592b94b80ea908f2646dda3a8d6a8213165
 
 
 
