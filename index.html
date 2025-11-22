@@ -1,69 +1,89 @@
-<html>
-    <head>
-    <link rel="stylesheet" href="style.css">
-    <title>  </title>
-    </head>
-    <body>
-    <div class="top-text">
-        <nav>
-            <a href="">Про нас</a>
-            <a href="">Доставка</a>
-            <a href="">Оплата</a>
-            <a href="">Відгуки</a>
-        </nav>
-    </div>
+ 
+ <!doctype html> 
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Кава Ua — Головна</title>
+  <link rel="stylesheet" href="styles.css">
 
-    <div class="kavaua">
-        <h1>Welcome to Кава Ua</h1>
-        <h2> В асортименті</h2>
 
+</head>
+<body>
+  <!-- Навігація -->
+  <nav>
+    <div class="nav-left">
+      <a href="#">Про нас</a> |
+      <a href="#">Доставка</a> |
+      <a href="#">Оплата</a> |
+      <a href="#">Відгуки</a>
     </div>
-    <div class="menu">
-        <nav>
-       <a href="">Чай</a>
-       <a href="">Кава</a>
-       <a href="">Напої</a>
-       <a href="">Десерти</a>
-        <a href="">Випічка</a>
-        </nav>
-    
-    
+    <div class="nav-right">
+      <a href="#">Кошик</a> | <a href="#">Увійти</a>
+    </div>
+  </nav>
 
-        
+  <!-- Хедер / героїчний блок -->
+  <header>
+    <h1>В асортименті</h1>
+    <h2>Welcome to Кава Ua</h2>
+    <p>Найсмачніша кава, чай та випічка в місті</p>
+  </header>
 
-    </div>
-    <div class="picture">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQepnEOL9xVISJ3i8I99lL103nnbp5tdrmIqw&s"style=width:150px;heigt:150px;>
-        <img src="https://images.prom.ua/5597234092_w$%7Bwidth%7D_h$%7Bheight%7D_kava-lungo-idealnij.jpg"style=width:150px;heigt:150px;>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKUiWKjlckfPWRn4SYK2KwhbuEeQeOAka8wg&s"style=width:150px;heigt:150px;>
-        <img src="https://zprz.city/uploads/news/1200x675/s8vfjfhoruewgnmy3vv2kk6ajqkwtt0m.jpg"style=width:150px;heigt:150px;>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwODFapHyT1MCkXqQfwuCWD9YVW-xF4lP0rQ&s"style=width:150px;heigt:150px;>
-    </div>
-        
-   </body>
-   <footer>
-    <div  class="bot-text">
-        <p>Наша адреса</p>
-        <p>Час роботи</p>
-        <p>Додаткова інформація</p>
-    
+  <!-- Основний контент: категорії -->
+  <main>
+    <section id="categories" aria-label="Категорії продуктів">
+      <article class="category" id="tea">
+        <h3>Чай</h3>
+        <img src="/mnt/data/Знімок екрана 2025-11-22 120300.png" alt="Чашка чаю" />
+        <p>Ароматний чорний і зелений чай.</p>
+      </article>
 
-    </div>
-    <div class="bottom-text">
-        <nav>
-<<<<<<< HEAD
-        <a href="">Ужгород.вул 42a</a>
-        <a href=""> 9:00-19:00</a>
-        <a href=""> Товари зі знижкою</a>
-        <a href=""> Хіт продажу</a>
-=======
-        <a href="">Ужгород.вул.42а</p>
-        <p>Пн-Птн 9:00-19:00</p>
-        <p>Товари зі знижкою</p>
-        <p>Хіт продажу</p>
->>>>>>> 28b81592b94b80ea908f2646dda3a8d6a8213165
-        </nav>
-    </div>
+      <article class="category" id="coffee">
+        <h3>Кава</h3>
+        <img src="/mnt/data/Знімок екрана 2025-11-22 120300.png" alt="Чашка кави" />
+        <p>Еспресо, латте, капучіно та інші.</p>
+      </article>
 
-   </footer>
+      <article class="category" id="drinks">
+        <h3>Напої</h3>
+        <img src="/mnt/data/Знімок екрана 2025-11-22 120300.png" alt="Свіжі напої" />
+        <p>Смузі, соки, прохолодні напої.</p>
+      </article>
+
+      <article class="category" id="desserts">
+        <h3>Десерти</h3>
+        <img src="/mnt/data/Знімок екрана 2025-11-22 120300.png" alt="Десерти" />
+        <p>Торти, пиріжки, сладощі.</p>
+      </article>
+
+      <article class="category" id="bakery">
+        <h3>Випічка</h3>
+        <img src="/mnt/data/Знімок екрана 2025-11-22 120300.png" alt="Випічка" />
+        <p>Свіжа випічка щодня.</p>
+      </article>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer>
+    <section id="contact">
+      <h4>Наша адреса</h4>
+      <p>Ужгород, вул. 42a</p>
+    </section>
+
+    <section id="hours">
+      <h4>Час роботи</h4>
+      <p>9:00 — 19:00</p>
+    </section>
+
+    <section id="extra">
+      <h4>Додаткова інформація</h4>
+      <p>Товари зі знижкою • Хіт продажу</p>
+    </section>
+  </footer>
+
+  <!-- Місце для скриптів, якщо знадобляться -->
+  <!-- <script src="app.js"></script> -->
+</body>
 </html>
