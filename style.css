@@ -1,49 +1,136 @@
 
-/* Основні стилі винесені з index.html */
- 
-:root{
-  --bg:#f0a7d6;
-  --accent:#70324f;
-  --panel: rgba(112,50,79,0.95);
-  --content-bg: rgba(112,50,79,0.15);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
-*{box-sizing:border-box}
-body{
-  margin:0; font-family: 'Georgia', serif; background:var(--bg); color:#2b0a12;
+
+body {
+    line-height: 1.6;
+    color: #333;
 }
-.navbar{
-  background:var(--accent); color:#fff; padding:18px 40px; position:sticky; top:0; z-index:10;
-  display:flex; align-items:center; gap:40px; font-weight:600; letter-spacing:0.6px;
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
-.nav-left{flex:1}
-.nav-left a{color:#f7e7f1; text-decoration:none; margin-right:28px}
-.hero{
-  text-align:center; padding:44px 10px 10px; position:relative; min-height:160px;
+
+
+header {
+    background: #5b2c6f;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-.hero h1{
-  font-family: 'Brush Script MT', cursive; font-size:56px; margin:0; color:transparent; -webkit-text-stroke:1px rgba(43,10,18,0.8);
-  transform:translateY(-12px);
+
+header nav a {
+    margin: 0 15px;
+    font-weight: bold;
+    transition: 0.3s;
 }
-.hero p{margin:0; font-size:20px; opacity:0.8}
-.welcome-big{
-  position:absolute; left:50%; transform:translateX(-50%); top:36px; pointer-events:none; width:80%;
+
+header nav a:hover {
+    color: #d6a2e8; 
 }
-.welcome-big h2{font-family: 'Playball', cursive; font-size:72px; margin:0; color:rgba(43,10,18,0.12); text-align:center}
-.categories{
-  display:grid; grid-template-columns: repeat(auto-fit,minmax(220px,1fr)); gap:10px; align-items:start; padding:36px 60px;
+
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTI4OTF8MHwxfHNlYXJjaHwxfHxjb2ZmZXxlbnwwfHx8fDE2MDM3MDA0Nzk&ixlib=rb-4.0.3&q=80&w=1200') center/cover no-repeat;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
-.category{background:var(--content-bg); padding:22px 10px; text-align:center; border-radius:2px;}
-.category h3{font-size:30px; margin:8px 0 18px}
-.category img{width:160px; height:120px; object-fit:cover; display:block; margin:0 auto; border:8px solid transparent}
-footer{background:var(--panel); padding:28px 40px; margin-top:30px; color:#16060a}
-.footer-grid{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; align-items:start; text-align:center}
-.footer-grid h4{margin:6px 0 14px; font-size:30px}
-.footer-grid p{margin:6px 0; font-size:14px}
-@media (max-width:700px){
-  .navbar{padding:12px}
-  .hero h1{font-size:36px}
-  .welcome-big h2{font-size:40px}
-  .categories{padding:20px}
-  .category img{width:120px;height:90px}
-  .footer-grid{grid-template-columns:1fr;}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #5b2c6f;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    background: #f0e6f7; 
+    padding: 20px;
+    flex: 1 1 250px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(91,44,111,0.3);
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact button {
+    padding: 10px;
+    border: none;
+    background: #5b2c6f;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    background: #421f51;
+}
+
+footer {
+    background: #3e1f4e;
+    color: white;
+    padding: 20px 0;
+}
+
+footer a {
+    margin: 0 10px;
+    color: #d6a2e8;
+}
+
+@media(max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+        padding: 0 10px;
+    }
+
+    .services {
+        flex-direction: column;
+    }
 }

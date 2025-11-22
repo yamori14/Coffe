@@ -1,89 +1,75 @@
  
- <!doctype html> 
+ <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Кава Ua — Головна</title>
-  <link rel="stylesheet" href="styles.css">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee World</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Навігація -->
-  <nav>
-    <div class="nav-left">
-      <a href="#">Про нас</a> |
-      <a href="#">Доставка</a> |
-      <a href="#">Оплата</a> |
-      <a href="#">Відгуки</a>
+    
+    <header>
+        <h1>Coffee World</h1>
+        <nav>
+            <a href="#about">Про нас</a>
+            <a href="#coffee">Наші сорти</a>
+            <a href="#review">Відгук</a>
+        </nav>
+    </header>
+
+    
+    <div class="hero">
+        <h1>Найкраща кава для вашого натхнення</h1>
     </div>
-    <div class="nav-right">
-      <a href="#">Кошик</a> | <a href="#">Увійти</a>
-    </div>
-  </nav>
 
-  <!-- Хедер / героїчний блок -->
-  <header>
-    <h1>В асортименті</h1>
-    <h2>Welcome to Кава Ua</h2>
-    <p>Найсмачніша кава, чай та випічка в місті</p>
-  </header>
-
-  <!-- Основний контент: категорії -->
-  <main>
-    <section id="categories" aria-label="Категорії продуктів">
-      <article class="category" id="tea">
-        <h3>Чай</h3>
-        <img src="/mnt/data/Знімок екрана 2025-11-22 120300.png" alt="Чашка чаю" />
-        <p>Ароматний чорний і зелений чай.</p>
-      </article>
-
-      <article class="category" id="coffee">
-        <h3>Кава</h3>
-        <img src="/mnt/data/Знімок екрана 2025-11-22 120300.png" alt="Чашка кави" />
-        <p>Еспресо, латте, капучіно та інші.</p>
-      </article>
-
-      <article class="category" id="drinks">
-        <h3>Напої</h3>
-        <img src="/mnt/data/Знімок екрана 2025-11-22 120300.png" alt="Свіжі напої" />
-        <p>Смузі, соки, прохолодні напої.</p>
-      </article>
-
-      <article class="category" id="desserts">
-        <h3>Десерти</h3>
-        <img src="/mnt/data/Знімок екрана 2025-11-22 120300.png" alt="Десерти" />
-        <p>Торти, пиріжки, сладощі.</p>
-      </article>
-
-      <article class="category" id="bakery">
-        <h3>Випічка</h3>
-        <img src="/mnt/data/Знімок екрана 2025-11-22 120300.png" alt="Випічка" />
-        <p>Свіжа випічка щодня.</p>
-      </article>
-    </section>
-  </main>
-
-  <!-- Футер -->
-  <footer>
-    <section id="contact">
-      <h4>Наша адреса</h4>
-      <p>Ужгород, вул. 42a</p>
+    
+    <section id="about">
+        <h2>Про нас</h2>
+        <p>Ми створюємо каву з любов’ю. Кава для нас — це не просто напій, а культура, що надихає і об’єднує людей.</p>
     </section>
 
-    <section id="hours">
-      <h4>Час роботи</h4>
-      <p>9:00 — 19:00</p>
+    
+    <section id="coffee">
+        <h2>Наші сорти</h2>
+        <div class="services">
+            <div class="service-item">
+                <h3>Еспресо</h3>
+                <p>Класична насичена кава з багатим ароматом.</p>
+            </div>
+            <div class="service-item">
+                <h3>Латте</h3>
+                <p>М’яка кава з молочною пінкою та ніжним смаком.</p>
+            </div>
+            <div class="service-item">
+                <h3>Капучино</h3>
+                <p>Ідеальний баланс кави, молока та пінки для ранкового заряду.</p>
+            </div>
+            <div class="service-item">
+                <h3>Флэт Вайт</h3>
+                <p>Елегантна кава з тонкою молочною текстурою.</p>
+            </div>
+        </div>
     </section>
 
-    <section id="extra">
-      <h4>Додаткова інформація</h4>
-      <p>Товари зі знижкою • Хіт продажу</p>
+    
+    <section id="review" class="contact">
+        <h2>Відгук</h2>
+        <form>
+            <input type="text" placeholder="Ваше ім'я" required>
+            <input type="email" placeholder="Ваш email" required>
+            <textarea placeholder="Ваш відгук" rows="5" required></textarea>
+            <button type="submit">Відправити</button>
+        </form>
     </section>
-  </footer>
 
-  <!-- Місце для скриптів, якщо знадобляться -->
-  <!-- <script src="app.js"></script> -->
+    
+    <footer>
+        <p>© 2025 Coffee World | 
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">Telegram</a>
+        </p>
+    </footer>
 </body>
 </html>
