@@ -38,7 +38,7 @@ header nav a:hover {
 }
 
 
-.hero {
+.name {
     background: url('https://images.unsplash.com/photo-1511920170033-f8396924c348?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTI4OTF8MHwxfHNlYXJjaHwxfHxjb2ZmZXxlbnwwfHx8fDE2MDM3MDA0Nzk&ixlib=rb-4.0.3&q=80&w=1200') center/cover no-repeat;
     height: 80vh;
     display: flex;
@@ -48,7 +48,7 @@ header nav a:hover {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
 }
 
-.hero h1 {
+.name h1 {
     font-size: 3rem;
 }
 
@@ -63,14 +63,14 @@ section h2 {
     color: #5b2c6f;
 }
 
-.services {
+.text1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.service-item {
+.texts {
     background: #f0e6f7; 
     padding: 20px;
     flex: 1 1 250px;
@@ -78,7 +78,7 @@ section h2 {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.service-item:hover {
+.texts:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(91,44,111,0.3);
 }
