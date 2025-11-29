@@ -134,3 +134,20 @@ footer a {
         flex-direction: column;
     }
 }
+#toTopBtn{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background:#5b2c6f;
+    color:white;
+    border:none;
+    padding: 12px 14px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s;
+}
+#toTopBtn:hover{
+    background: #421f51;
+}
