@@ -1,4 +1,4 @@
-// Плавна прокрутка по меню
+
 document.querySelectorAll('nav a').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
@@ -10,7 +10,7 @@ document.querySelectorAll('nav a').forEach(link => {
     });
 });
 
-// Кнопка "Вгору"
+
 const toTopBtn = document.getElementById("toTopBtn");
 
 window.addEventListener("scroll", () => {
@@ -28,7 +28,7 @@ toTopBtn.addEventListener("click", () => {
     });
 });
 
-// Повідомлення після відправки відгуку
+
 document.getElementById("reviewForm").addEventListener("submit", function(e) {
     e.preventDefault();
     alert("Дякуємо за ваш відгук! ❤️");
