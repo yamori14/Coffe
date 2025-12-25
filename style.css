@@ -211,3 +211,67 @@ footer a {
             transform: translateY(-3px);
             box-shadow: 0 5px 15px rgba(39,174,96,0.4);
         }
+      .text1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.coffee-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+}
+
+.texts {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.buy-btn {
+    background-color: #6f4e37;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.buy-btn:hover { background-color: #4e3626; }
+
+/* Віджет кошика */
+#cart-widget {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #6f4e37;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Модальне вікно */
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7);
+    z-index: 1000;
+}
+
+.cart-content {
+    background: white;
+    color: black;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+}

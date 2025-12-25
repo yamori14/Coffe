@@ -1,5 +1,5 @@
  
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
@@ -18,42 +18,60 @@
         </nav>
     </header>
 
-    
     <div class="name">
         <h1>Найкраща кава для вашого натхнення</h1>
     </div>
 
-    
     <section id="about">
         <h2>Про нас</h2>
         <p>Ми створюємо каву з любов’ю. Кава для нас — це не просто напій, а культура, що надихає і об’єднує людей.</p>
     </section>
 
-    
     <section id="coffee">
         <h2>Наші сорти</h2>
-        <div class="text1">
-            <a href="espreso.html" class="texts">
-                <h3>Еспресо</h3>
-                <p>Класична насичена кава з багатим ароматом.</p>
+        <div class="text1" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <!-- Еспресо -->
+            <div class="coffee-card" style="border: 1px solid #ccc; padding: 15px; border-radius: 10px; width: 220px; text-align: center;">
+                <a href="espreso.html" class="texts" style="text-decoration: none; color: inherit;">
+                    <h3>Еспресо</h3>
+                    <p>Класична насичена кава з багатим ароматом.</p>
+                    <p><b>40 грн</b></p>
                 </a>
-        
-            <a href="late.html"class="texts">
-                <h3>Латте</h3>
-                <p>М’яка кава з молочною пінкою та ніжним смаком.</p>
-            </a>
-            <a href="capucino.html" class="texts">
-                <h3>Капучино</h3>
-                <p>Ідеальний баланс кави, молока та пінки для ранкового заряду.</p>
-            </a>
-            <a href="white.html" class="texts">
-                <h3>Флэт Вайт</h3>
-                <p>Елегантна кава з тонкою молочною текстурою.</p>
-            </a>
+                <button class="buy-btn" data-name="Еспресо" data-price="40" style="background: #6f4e37; color: white; border: none; padding: 8px 15px; cursor: pointer; border-radius: 5px;">В кошик 🛒</button>
+            </div>
+
+            <!-- Латте -->
+            <div class="coffee-card" style="border: 1px solid #ccc; padding: 15px; border-radius: 10px; width: 220px; text-align: center;">
+                <a href="late.html" class="texts" style="text-decoration: none; color: inherit;">
+                    <h3>Латте</h3>
+                    <p>М’яка кава з молочною пінкою та ніжним смаком.</p>
+                    <p><b>55 грн</b></p>
+                </a>
+                <button class="buy-btn" data-name="Латте" data-price="55" style="background: #6f4e37; color: white; border: none; padding: 8px 15px; cursor: pointer; border-radius: 5px;">В кошик 🛒</button>
+            </div>
+
+            <!-- Капучино -->
+            <div class="coffee-card" style="border: 1px solid #ccc; padding: 15px; border-radius: 10px; width: 220px; text-align: center;">
+                <a href="capucino.html" class="texts" style="text-decoration: none; color: inherit;">
+                    <h3>Капучино</h3>
+                    <p>Ідеальний баланс кави, молока та пінки.</p>
+                    <p><b>50 грн</b></p>
+                </a>
+                <button class="buy-btn" data-name="Капучино" data-price="50" style="background: #6f4e37; color: white; border: none; padding: 8px 15px; cursor: pointer; border-radius: 5px;">В кошик 🛒</button>
+            </div>
+
+            <!-- Флет Вайт -->
+            <div class="coffee-card" style="border: 1px solid #ccc; padding: 15px; border-radius: 10px; width: 220px; text-align: center;">
+                <a href="white.html" class="texts" style="text-decoration: none; color: inherit;">
+                    <h3>Флэт Вайт</h3>
+                    <p>Елегантна кава з тонкою молочною текстурою.</p>
+                    <p><b>65 грн</b></p>
+                </a>
+                <button class="buy-btn" data-name="Флэт Вайт" data-price="65" style="background: #6f4e37; color: white; border: none; padding: 8px 15px; cursor: pointer; border-radius: 5px;">В кошик 🛒</button>
+            </div>
         </div>
     </section>
 
-    
     <section id="review" class="contact">
         <h2>Відгук</h2>
         <form>
@@ -63,16 +81,34 @@
             <button type="submit">Відправити</button>
         </form>
     </section>
-    <button id="toTopBtn"></button>
 
-    
     <footer>
-        <p>© 2025 CoffeeUA | 
-        <a href="#">Facebook</a>
-        <a href="#">Instagram</a>
-        <a href="#">Telegram</a>
+        <p> CoffeeUA 
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Telegram</a>
         </p>
     </footer>
-    <script src ="script.js"></script>
+
+    <!-- Кнопка кошика -->
+    <div id="cart-widget" style="position: fixed; bottom: 20px; right: 20px; background: #6f4e37; color: white; padding: 15px 20px; border-radius: 30px; cursor: pointer; z-index: 1000; box-shadow: 0 4px 10px rgba(0,0,0,0.3);">
+        🛒 Кошик: <span id="cart-count">0</span>
+    </div>
+
+    <!-- Модальне вікно кошика -->
+    <div id="cart-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); z-index: 2000;">
+        <div style="background: white; color: black; width: 90%; max-width: 400px; margin: 50px auto; padding: 20px; border-radius: 15px; position: relative;">
+            <span id="close-cart" style="position: absolute; top: 10px; right: 15px; font-size: 24px; cursor: pointer;">&times;</span>
+            <h2 style="margin-top: 0;">Ваш кошик</h2>
+            <div id="cart-items-list" style="margin: 20px 0; max-height: 300px; overflow-y: auto;">
+                <p id="empty-msg">Кошик порожній</p>
+            </div>
+            <hr>
+            <p style="font-size: 18px;">Разом: <b id="total-price">0</b> грн</p>
+            <button id="order-btn" style="width: 100%; background: #6f4e37; color: white; border: none; padding: 12px; border-radius: 5px; cursor: pointer; font-size: 16px;">Оформити замовлення</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
