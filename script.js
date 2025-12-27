@@ -26,27 +26,27 @@ const cartList = document.getElementById('cart-items-list');
 const countBadge = document.getElementById('cart-count');
 const totalPriceEl = document.getElementById('total-price');
 
-// Відкриття кошика
+
 cartWidget.onclick = function() {
     cartModal.style.display = 'block';
 };
 
-// Закриття кошика
+
 closeBtn.onclick = function() {
     cartModal.style.display = 'none';
 };
 
-// Закриття при кліку поза вікном
+
 window.onclick = function(event) {
     if (event.target == cartModal) {
         cartModal.style.display = "none";
     }
 };
 
-// Додавання товарів
+
 document.querySelectorAll('.buy-btn').forEach(button => {
     button.onclick = function(e) {
-        e.preventDefault(); // щоб не спрацювало посилання
+        e.preventDefault(); 
         const name = this.getAttribute('data-name');
         const price = parseInt(this.getAttribute('data-price'));
         
